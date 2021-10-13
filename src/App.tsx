@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {withLDProvider} from "launchdarkly-react-client-sdk";
 
 function App() {
   return (
@@ -23,4 +24,12 @@ function App() {
   );
 }
 
-export default App;
+export default withLDProvider({
+  clientSideID: 'your-client-side-id',
+  user: {
+    "key": "aa0ceb",
+    "name": "Grace Hopper",
+    "email": "gracehopper@example.com"
+  },
+  options: { }
+})(App);

@@ -1,3 +1,9 @@
+# Simple Replication of Launch Darkly sourcemap issue
+
+Very standard CRA with import of package in App.tsx leads to errors. Replicate with a `yarn start`.
+
+See: https://github.com/launchdarkly/react-client-sdk/issues/66
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
